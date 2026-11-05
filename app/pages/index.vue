@@ -1,3 +1,18 @@
+<script setup lang="ts">
+  useHead({
+    title: 'Home | Eden Adlao'
+  })
+
+  useSeoMeta({
+    description: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
+    ogTitle: 'Eden Adlao | Portfolio',
+    ogDescription: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
+    ogType: 'website',
+    ogImage: '/images/profile-pic.jpg',
+    twitterCard: 'summary'
+  })
+</script>
+
 <template>
   <section
     class="mx-auto grid min-h-[85vh] max-w-7xl grid-cols-1 items-center gap-y-10 px-6 pb-24 pt-16 md:px-12 md:pt-24 lg:grid-cols-2 lg:grid-rows-2 lg:gap-x-10"
