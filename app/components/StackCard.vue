@@ -13,11 +13,11 @@ defineProps<{
 
 <template>
   <article
-    class="card border border-white/10 bg-white/5 shadow-[0_0_35px_rgba(0,0,0,0.4)] backdrop-blur-xl"
+    class="card rounded-3xl border border-[#343642] bg-[#23252f] shadow-[0_0_35px_rgba(0,0,0,0.35)]"
   >
-    <div class="card-body p-7 sm:p-10 md:p-14">
+    <div class="card-body p-8 sm:p-10">
       <h2
-        class="mb-6 text-xl font-semibold tracking-[4px] sm:text-2xl"
+        class="mb-6 text-base font-semibold tracking-[4px] sm:text-lg"
         :class="color"
       >
         {{ name }}
@@ -30,20 +30,20 @@ defineProps<{
         <div
           v-for="technology in technologies"
           :key="technology.name"
-          class="card card-compact items-center border border-white/10 bg-white/5 p-3 text-center transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(214,181,212,0.2)] sm:p-4"
+          class="flex flex-col items-center gap-2 text-center"
         >
-          <div class="card-body items-center justify-center gap-3 p-1 sm:p-2">
-            <div class="flex size-16 items-center justify-center rounded-full bg-white/5 p-3 sm:size-20">
+          <div class="stack-ring size-16 rounded-full p-1">
+            <div class="stack-inner flex size-full items-center justify-center rounded-full p-3">
               <img
                 :src="`/images/stack-icons/${technology.icon}`"
                 :alt="technology.name"
                 class="size-full object-contain"
               >
             </div>
-            <p class="text-xs font-medium text-white/90 sm:text-sm">
-              {{ technology.name }}
-            </p>
           </div>
+          <p class="text-xs font-medium text-white/90">
+            {{ technology.name }}
+          </p>
         </div>
       </div>
     </div>

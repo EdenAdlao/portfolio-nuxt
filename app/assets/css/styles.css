@@ -44,6 +44,27 @@ body {
   object-fit: cover;
 }
 
+.stack-ring {
+  background: linear-gradient(45deg, #fbcabb, #edabc9, #d6b5d4, #9ec9ec);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+  transform-style: preserve-3d;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.stack-inner {
+  background: #161824;
+}
+
+.stack-ring:hover {
+  animation: rotate-y-ring 2.5s linear infinite;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.15),
+    0 0 30px rgba(237, 171, 201, 0.25);
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -51,6 +72,16 @@ body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-y-ring {
+  from {
+    transform: translateY(-5px) scale(1.05) rotateY(0deg);
+  }
+
+  to {
+    transform: translateY(-5px) scale(1.05) rotateY(360deg);
   }
 }
 
@@ -67,7 +98,8 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .profile-border,
-  .profile-border::before {
+  .profile-border::before,
+  .stack-ring {
     animation: none;
   }
 }

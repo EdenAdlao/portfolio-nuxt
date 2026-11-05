@@ -66,9 +66,9 @@ const stackCategories: StackCategory[] = [
 </script>
 
 <template>
-  <section class="mx-auto max-w-5xl px-6 pb-24 pt-14 md:pt-20">
+  <section class="mx-auto max-w-2xl px-6 pb-24 pt-14">
     <h1
-      class="mb-12 text-center text-5xl font-semibold tracking-[5px] text-[#d6b5d4] drop-shadow-[0_0_12px_rgba(214,181,212,0.9)] sm:text-6xl md:mb-16 md:text-7xl"
+      class="mb-10 text-center text-5xl font-semibold tracking-[5px] text-[#d6b5d4] drop-shadow-[0_0_12px_rgba(214,181,212,0.9)] sm:text-6xl"
     >
       MY STACK
     </h1>
