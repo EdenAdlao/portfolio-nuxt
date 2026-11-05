@@ -40,13 +40,20 @@
           isActive(item.path) ? item.active : ['text-white/70', item.hover]
         ]"
       >
-        <span class="material-symbols-outlined text-2xl">{{ item.icon }}</span>
+        <component
+          :is="item.icon"
+          :size="24"
+          :stroke-width="2"
+          aria-hidden="true"
+        />
       </NuxtLink>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { Award, House, SquareCode, UserRound } from '@lucide/vue'
+
 const route = useRoute()
 
 const navItems = [
@@ -55,28 +62,28 @@ const navItems = [
     path: '/',
     active: 'text-[#fbcabb] drop-shadow-[0_0_10px_rgba(251,202,187,0.9)]',
     hover: 'hover:text-[#fbcabb] hover:drop-shadow-[0_0_10px_rgba(251,202,187,0.9)]',
-    icon: 'home'
+    icon: House
   },
   {
     label: 'ABOUT',
     path: '/about',
     active: 'text-[#edabc9] drop-shadow-[0_0_10px_rgba(237,171,201,0.9)]',
     hover: 'hover:text-[#edabc9] hover:drop-shadow-[0_0_10px_rgba(237,171,201,0.9)]',
-    icon: 'person_3'
+    icon: UserRound
   },
   {
     label: 'STACK',
     path: '/stack',
     active: 'text-[#d3c8e3] drop-shadow-[0_0_10px_rgba(211,200,227,0.9)]',
     hover: 'hover:text-[#d3c8e3] hover:drop-shadow-[0_0_10px_rgba(211,200,227,0.9)]',
-    icon: 'code_blocks'
+    icon: SquareCode
   },
   {
     label: 'CERTIFICATIONS',
     path: '/certifications',
     active: 'text-[#9ec9ec] drop-shadow-[0_0_10px_rgba(158,201,236,0.9)]',
     hover: 'hover:text-[#9ec9ec] hover:drop-shadow-[0_0_10px_rgba(158,201,236,0.9)]',
-    icon: 'workspace_premium'
+    icon: Award
   }
 ]
 
