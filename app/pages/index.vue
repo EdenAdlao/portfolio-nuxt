@@ -8,7 +8,9 @@
     ogTitle: 'Eden Adlao | Portfolio',
     ogDescription: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
     ogType: 'website',
-    ogImage: '/images/profile-pic.jpg',
+    ogUrl: 'https://eden-adlao-portfolio.onrender.com/',
+    ogImage: 'https://eden-adlao-portfolio.onrender.com/images/profile-pic.jpg',
+    ogImageAlt: 'Portrait of Eden Adlao',
     twitterCard: 'summary'
   })
 </script>
@@ -41,7 +43,7 @@
 
     <div class="order-2 flex justify-center lg:order-0 lg:row-span-2 lg:justify-end">
       <div
-        class="profile-border h-65 w-65 p-[5px] sm:h-[320px] sm:w-[320px] md:h-[360px] md:w-[360px]"
+        class="profile-border h-65 w-65 p-1.25 sm:h-80 sm:w-[320px] md:h-90 md:w-90"
       >
         <div class="h-full w-full overflow-hidden rounded-full bg-white">
           <img
