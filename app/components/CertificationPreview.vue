@@ -12,18 +12,23 @@ const emit = defineEmits<{
 
 <template>
   <dialog class="modal" :class="{ 'modal-open': certification }">
-    <div v-if="certification" class="modal-box max-w-3xl bg-[#23252f] p-4">
-      <h2 class="sr-only">{{ certification.title }}</h2>
+    <div v-if="certification" class="cert-preview modal-box relative max-w-3xl p-6 sm:p-8">
+      <button
+        type="button"
+        aria-label="Close certificate preview"
+        class="cert-preview-close"
+        @click="emit('close')"
+      >
+        ×
+      </button>
       <img
         :src="certification.image"
         :alt="`${certification.title} certificate`"
-        class="w-full rounded-lg"
+        class="w-full rounded-xl"
       >
-      <div class="modal-action">
-        <button type="button" class="btn" @click="emit('close')">
-          Close
-        </button>
-      </div>
+      <h2 class="mt-5 text-center text-xl font-semibold tracking-[4px] text-[#161824]">
+        {{ certification.title }}
+      </h2>
     </div>
     <form method="dialog" class="modal-backdrop" @submit="emit('close')">
       <button type="submit" aria-label="Close certificate preview">close</button>
