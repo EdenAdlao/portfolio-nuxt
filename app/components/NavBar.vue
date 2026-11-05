@@ -26,6 +26,24 @@
 
     <div class="hidden h-0.75 w-full bg-[linear-gradient(to_right,#fbcabb_0%,#edabc9_33%,#d3c8e3_66%,#9ec9ec_100%)] md:block"></div>
   </nav>
+
+  <div class="fixed bottom-0 left-0 z-50 flex w-full flex-col border-t border-white/10 bg-[#0b1027]/90 backdrop-blur-lg md:hidden">
+    <div class="h-0.75 w-full bg-[linear-gradient(to_right,#fbcabb_0%,#edabc9_33%,#d3c8e3_66%,#9ec9ec_100%)]"></div>
+    <div class="flex items-center justify-around py-3">
+      <NuxtLink
+        v-for="item in navItems"
+        :key="`${item.path}-mobile`"
+        :to="item.path"
+        :aria-label="item.label"
+        :class="[
+          'transition-all duration-300',
+          isActive(item.path) ? item.active : ['text-white/70', item.hover]
+        ]"
+      >
+        <span class="material-symbols-outlined text-2xl">{{ item.icon }}</span>
+      </NuxtLink>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -36,25 +54,29 @@ const navItems = [
     label: 'HOME',
     path: '/',
     active: 'text-[#fbcabb] drop-shadow-[0_0_10px_rgba(251,202,187,0.9)]',
-    hover: 'hover:text-[#fbcabb] hover:drop-shadow-[0_0_10px_rgba(251,202,187,0.9)]'
+    hover: 'hover:text-[#fbcabb] hover:drop-shadow-[0_0_10px_rgba(251,202,187,0.9)]',
+    icon: 'home'
   },
   {
     label: 'ABOUT',
     path: '/about',
     active: 'text-[#edabc9] drop-shadow-[0_0_10px_rgba(237,171,201,0.9)]',
-    hover: 'hover:text-[#edabc9] hover:drop-shadow-[0_0_10px_rgba(237,171,201,0.9)]'
+    hover: 'hover:text-[#edabc9] hover:drop-shadow-[0_0_10px_rgba(237,171,201,0.9)]',
+    icon: 'person_3'
   },
   {
     label: 'STACK',
     path: '/stack',
     active: 'text-[#d3c8e3] drop-shadow-[0_0_10px_rgba(211,200,227,0.9)]',
-    hover: 'hover:text-[#d3c8e3] hover:drop-shadow-[0_0_10px_rgba(211,200,227,0.9)]'
+    hover: 'hover:text-[#d3c8e3] hover:drop-shadow-[0_0_10px_rgba(211,200,227,0.9)]',
+    icon: 'code_blocks'
   },
   {
     label: 'CERTIFICATIONS',
     path: '/certifications',
     active: 'text-[#9ec9ec] drop-shadow-[0_0_10px_rgba(158,201,236,0.9)]',
-    hover: 'hover:text-[#9ec9ec] hover:drop-shadow-[0_0_10px_rgba(158,201,236,0.9)]'
+    hover: 'hover:text-[#9ec9ec] hover:drop-shadow-[0_0_10px_rgba(158,201,236,0.9)]',
+    icon: 'workspace_premium'
   }
 ]
 
