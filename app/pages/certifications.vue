@@ -59,7 +59,7 @@ useSeoMeta({
       CERTIFICATIONS
     </h1>
 
-    <div class="grid grid-cols-1 place-items-center gap-8 sm:grid-cols-2 xl:grid-cols-4">
+    <div class="mx-auto grid max-w-4xl grid-cols-1 place-items-center gap-10 sm:grid-cols-2 lg:grid-cols-3">
       <CertificationCard
         v-for="certification in certifications"
         :key="certification.title"
