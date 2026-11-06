@@ -22,6 +22,7 @@
   }
 }
 
+/*Stack icons flip animation*/
 @theme {
   --animate-ring-flip: ring-flip 2.5s linear infinite;
 
