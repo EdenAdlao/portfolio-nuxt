@@ -5,44 +5,20 @@ html,
 body {
   margin: 0;
   min-width: 320px;
-  background: #0f172a;
+  background: #161824;
   font-family: "Poppins", sans-serif;
 }
 
-.profile-border {
-  position: relative;
-  border-radius: 50%;
-  animation: float 4s ease-in-out infinite;
-  box-shadow:
-    0 0 10px rgba(255, 255, 255, 0.4),
-    0 0 20px rgba(255, 255, 255, 0.15);
+/*Portrait floating animation*/
+@theme {
+  --animate-float: float 4s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+  }
 }
 
-.profile-border::before {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #fbcabb, #edabc9, #d6b5d4, #9ec9ec);
-  content: "";
-  animation: spin 3s linear infinite;
-}
-
-.profile-border > div {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 50%;
-  background: white;
-}
-
-.profile-border img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .stack-ring {
   background: linear-gradient(45deg, #fbcabb, #edabc9, #d6b5d4, #9ec9ec);
@@ -256,40 +232,9 @@ body {
     0 0 30px rgba(237, 171, 201, 0.25);
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-y-ring {
-  from {
-    transform: translateY(-5px) scale(1.05) rotateY(0deg);
-  }
-
-  to {
-    transform: translateY(-5px) scale(1.05) rotateY(360deg);
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
-  .profile-border,
-  .profile-border::before,
   .stack-ring,
   .cert-card,
   .cert-img-bg img,
