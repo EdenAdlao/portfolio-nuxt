@@ -47,7 +47,7 @@ useSeoMeta({
   ogTitle: 'Certifications | Eden Adlao',
   ogDescription: 'See the professional certifications and learning achievements of Eden Adlao.',
   ogType: 'website',
-  twitterCard: 'summary'
+  twitterCard: 'summary',
 })
 </script>
 

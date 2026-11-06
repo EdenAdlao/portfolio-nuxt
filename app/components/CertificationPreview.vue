@@ -12,11 +12,16 @@ const emit = defineEmits<{
 
 <template>
   <dialog class="modal" :class="{ 'modal-open': certification }">
-    <div v-if="certification" class="cert-preview modal-box relative max-w-3xl p-6 sm:p-8">
+    <!-- .cert-preview -->
+    <div
+      v-if="certification"
+      class="modal-box relative max-w-3xl overflow-visible rounded-[1.25rem] bg-[linear-gradient(to_right,rgb(253,191,181),rgb(237,171,201),rgb(211,200,227),rgb(158,201,236))] p-6 shadow-[0_0_45px_rgba(255,255,255,0.2)] sm:p-8"
+    >
+      <!-- .cert-preview-close -->
       <button
         type="button"
         aria-label="Close certificate preview"
-        class="cert-preview-close"
+        class="absolute right-0 top-0 z-[3] size-9 cursor-pointer text-[1.75rem] leading-none text-white transition-colors duration-300 hover:text-[#161824]"
         @click="emit('close')"
       >
         ×
