@@ -1,11 +1,15 @@
-
 <template>
   <nav class="w-full">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-12">
       <NuxtLink
         to="/"
-        class="hidden text-lg font-semibold text-[#d6b5d4] drop-shadow-[0_0_10px_rgba(243,204,189,0.4)] md:block"
+        class="hidden items-center gap-3 text-lg font-semibold text-[#d6b5d4] drop-shadow-[0_0_10px_rgba(243,204,189,0.4)] md:flex"
       >
+        <img
+          src="/images/logo-ea.png"
+          alt=""
+          class="size-8 object-contain"
+        >
         EDEN ADLAO
       </NuxtLink>
 
