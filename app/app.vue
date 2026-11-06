@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-[#161824] text-white lg:flex">
-    <AppSidebar />
+    <Sidebar class="bg-[#161824]"/>
 
     <div class="flex min-h-screen min-w-0 flex-1 flex-col">
       <NavBar />
