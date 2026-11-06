@@ -11,7 +11,7 @@
     ogUrl: 'https://eden-adlao-portfolio.onrender.com/',
     ogImage: 'https://eden-adlao-portfolio.onrender.com/images/profile-pic.jpg',
     ogImageAlt: 'Portrait of Eden Adlao',
-    twitterCard: 'summary',
+    twitterCard: 'summary_large_image',
   })
 </script>
 
@@ -23,11 +23,8 @@
         Hi, I am
       </p>
 
-      <h1 class="relative inline-block text-5xl font-bold leading-none sm:text-6xl md:text-7xl">
-        <span
-          class="absolute inset-0 -z-10 select-none bg-[linear-gradient(to_right,#fdbfb5,#edabc9,#d3c8e3,#9ec9ec)] bg-clip-text text-transparent blur-2xl opacity-70"
-          aria-hidden="true">
-          EDEN ADLAO
+      <h1 class="relative isolate inline-block text-5xl font-bold leading-none sm:text-6xl md:text-7xl">
+        <span class="absolute inset-0 -z-10 select-none bg-[linear-gradient(to_right,#fdbfb5,#edabc9,#d3c8e3,#9ec9ec)] bg-clip-text text-transparent blur-2xl opacity-70" aria-hidden="true"> EDEN ADLAO
         </span>
         <span class="bg-[linear-gradient(to_right,#fdbfb5,#edabc9,#d3c8e3,#9ec9ec)] bg-clip-text text-transparent">
           EDEN ADLAO

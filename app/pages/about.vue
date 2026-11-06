@@ -1,15 +1,18 @@
 <script setup lang="ts">
-    useHead({
+  useHead({
     title: 'About | Eden Adlao'
-    })
+  })
 
-    useSeoMeta({
+  useSeoMeta({
     description: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
     ogTitle: 'About | Eden Adlao',
     ogDescription: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
     ogType: 'website',
-    ogImage: '/images/profile-pic.jpg'
-    })
+    ogUrl: 'https://eden-adlao-portfolio.onrender.com/about',
+    ogImage: 'https://eden-adlao-portfolio.onrender.com/images/profile-pic.jpg',
+    ogImageAlt: 'Portrait of Eden Adlao',
+    twitterCard: 'summary_large_image',
+  })
 </script>
 
 <template>
@@ -21,7 +24,7 @@
     </h1>
 
     <div class="flex w-full max-w-6xl flex-col gap-10 md:flex-row md:gap-16">
-      <div class="flex-1 text-justify text-[16px] leading-relaxed text-white/80 md:text-[20px]">
+      <div class="flex-1 text-justify text-base leading-relaxed text-white/80 md:text-xl">
         <p>
           I have always had a deep passion for arts, particularly painting. Over the years, I’ve
           grabbed every opportunity to apply this creativity, and as an IT student, I’ve found it
@@ -30,7 +33,7 @@
         </p>
       </div>
 
-      <div class="flex-1 text-justify text-[16px] leading-relaxed text-white/80 md:text-[20px]">
+      <div class="flex-1 text-justify text-base leading-relaxed text-white/80 md:text-xl">
         <p>
           I am actively pursuing a career in front-end development, excited by the challenge of
           executing creative ideas in a technical space. While my primary focus is on the

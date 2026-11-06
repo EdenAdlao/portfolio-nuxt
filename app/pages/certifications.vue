@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import type { Certification } from '~/types/certification'
 
+useHead({
+  title: 'Certifications | Eden Adlao'
+})
+
+useSeoMeta({
+  description: 'See the professional certifications and learning achievements of Eden Adlao.',
+  ogTitle: 'Certifications | Eden Adlao',
+  ogDescription: 'See the professional certifications and learning achievements of Eden Adlao.',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
+
 const certifications: Certification[] = [
   {
     title: 'Word Associate',
@@ -38,17 +50,7 @@ const certifications: Certification[] = [
 
 const selectedCertification = ref<Certification | null>(null)
 
-useHead({
-  title: 'Certifications | Eden Adlao'
-})
 
-useSeoMeta({
-  description: 'See the professional certifications and learning achievements of Eden Adlao.',
-  ogTitle: 'Certifications | Eden Adlao',
-  ogDescription: 'See the professional certifications and learning achievements of Eden Adlao.',
-  ogType: 'website',
-  twitterCard: 'summary',
-})
 </script>
 
 <template>
