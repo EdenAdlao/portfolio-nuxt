@@ -63,6 +63,12 @@ const stackCategories: StackCategory[] = [
     ]
   }
 ]
+
+const chartItems = stackCategories.map(category => ({
+  name: category.name,
+  value: category.technologies.length
+}))
+
 </script>
 
 <template>
@@ -74,6 +80,8 @@ const stackCategories: StackCategory[] = [
     </h1>
 
     <div class="grid gap-8">
+      
+
       <StackCard
         v-for="category in stackCategories"
         :key="category.name"
@@ -81,6 +89,8 @@ const stackCategories: StackCategory[] = [
         :color="category.color"
         :technologies="category.technologies"
       />
+
+      <StackChart :items="chartItems"  />
     </div>
   </section>
 </template>
