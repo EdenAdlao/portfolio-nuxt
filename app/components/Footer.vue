@@ -19,7 +19,7 @@ const pageLinks = [
     <div class="footer footer-vertical mx-auto max-w-7xl gap-10 px-6 py-10 sm:footer-horizontal md:px-12">
       <aside class="max-w-xs">
         <div class="flex items-center gap-3">
-          <img src="/images/logo-ea.png" alt="" class="size-8 object-contain">
+          <img src="/images/logo-ea-dark.png" alt="" class="size-8 object-contain">
           <span class="text-lg font-semibold">EDEN ADLAO</span>
         </div>
         <p class="mt-3 text-sm leading-relaxed text-[#161824]/80">
@@ -57,7 +57,7 @@ const pageLinks = [
 
     <!-- copyright bar -->
     <div class="border-t border-[#161824]/20 px-6 py-4 text-center text-xs text-[#161824]/70">
-      &copy; {{ year }} Eden Adlao.
+      &copy; {{ year }} Eden Adlao
     </div>
   </footer>
 </template>
