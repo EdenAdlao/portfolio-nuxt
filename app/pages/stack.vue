@@ -8,7 +8,7 @@ useSeoMeta({
   ogTitle: 'Tech Stack | Eden Adlao',
   ogDescription: 'View the technologies and tools Eden Adlao uses to build modern web experiences.',
   ogType: 'website',
-  twitterCard: 'summary'
+  twitterCard: 'summary',
 })
 
 type StackCategory = {
