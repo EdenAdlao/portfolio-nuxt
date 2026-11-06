@@ -15,7 +15,6 @@ const pageLinks = [
   <footer
     class="mt-10 w-full bg-[linear-gradient(to_right,#fbcabb_0%,#edabc9_33%,#d3c8e3_66%,#9ec9ec_100%)] pb-24 text-[#161824] md:pb-0"
   >
-    <!-- DaisyUI footer -->
     <div class="footer footer-vertical mx-auto max-w-7xl gap-10 px-6 py-10 sm:footer-horizontal md:px-12">
       <aside class="max-w-xs">
         <div class="flex items-center gap-3">
@@ -33,7 +32,8 @@ const pageLinks = [
           v-for="link in pageLinks"
           :key="link.path"
           :to="link.path"
-          class="link link-hover inline-flex items-center gap-2"
+          class="link link-hover inline-flex items-center gap-2 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.9)]"
+
         >
           <component :is="link.icon" :size="16" aria-hidden="true" />
           {{ link.label }}
@@ -46,7 +46,7 @@ const pageLinks = [
           href="https://github.com/EdenAdlao"
           target="_blank"
           rel="noopener noreferrer"
-          class="link link-hover inline-flex items-center gap-2"
+          class="link link-hover inline-flex items-center gap-2 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.9)]"
         >
           <img src="/images/github-logo.svg" alt="" class="size-4 brightness-0">
           GitHub
