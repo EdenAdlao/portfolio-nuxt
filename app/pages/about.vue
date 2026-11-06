@@ -16,7 +16,7 @@
 </script>
 
 <template>
-  <section class="flex flex-col items-center px-6 pb-24 pt-20 md:px-10">
+  <section class="flex flex-col items-center px-6 pb-45 pt-20 md:px-10">
     <h1
       class="mb-16 text-5xl font-semibold tracking-[5px] text-[#edabc9] drop-shadow-[0_0_12px_rgba(237,171,201,1)] sm:text-6xl md:text-7xl"
     >
