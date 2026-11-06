@@ -5,12 +5,15 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
+
   css: ['~/assets/css/styles.css'],
 
   app: {
     head: {
       title: 'Web Portfolio | Eden Adlao',
       link: [
+
+        { rel: 'icon', type: 'image/png', href: '/images/logo-ea.png' },
         
         {
           rel: 'stylesheet',
