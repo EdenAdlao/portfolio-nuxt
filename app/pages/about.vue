@@ -1,18 +1,16 @@
 <script setup lang="ts">
   useHead({
-    title: 'About | Eden Adlao'
+    title: 'About Me | Eden Adlao'
   })
 
   useSeoMeta({
-    description: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
-    ogTitle: 'About | Eden Adlao',
-    ogDescription: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
-    ogType: 'website',
-    ogUrl: 'https://eden-adlao-portfolio.onrender.com/about',
-    ogImage: 'https://eden-adlao-portfolio.onrender.com/images/profile-pic.jpg',
-    ogImageAlt: 'Portrait of Eden Adlao',
-    twitterCard: 'summary_large_image',
-  })
+  description: 'Learn how my creative background shapes my work in UI/UX design and front-end development.',
+  ogDescription: 'Learn how my creative background shapes my work in UI/UX design and front-end development.',
+  ogTitle: 'About Me | Eden Adlao',
+  ogType: 'website',
+  ogUrl: 'https://eden-adlao-portfolio.onrender.com/about',
+  twitterCard: 'summary',
+})
 </script>
 
 <template>

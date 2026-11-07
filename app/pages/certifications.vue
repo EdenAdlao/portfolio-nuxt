@@ -6,11 +6,12 @@ useHead({
 })
 
 useSeoMeta({
-  description: 'See the professional certifications and learning achievements of Eden Adlao.',
+  description: 'Browse my certifications in Microsoft 365 apps and IT Specialist programs, and verify each credential through Certiport.',
+  ogDescription: 'Browse my certifications in Microsoft 365 apps and IT Specialist programs, and verify each credential through Certiport.',
   ogTitle: 'Certifications | Eden Adlao',
-  ogDescription: 'See the professional certifications and learning achievements of Eden Adlao.',
   ogType: 'website',
-  twitterCard: 'summary_large_image',
+  ogUrl: 'https://eden-adlao-portfolio.onrender.com/certifications',
+  twitterCard: 'summary',
 })
 
 const certifications: Certification[] = [

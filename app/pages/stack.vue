@@ -1,14 +1,15 @@
 <script setup lang="ts">
 useHead({
-  title: 'Tech Stack | Eden Adlao'
+  title: 'My Stack | Eden Adlao'
 })
 
 useSeoMeta({
-  description: 'View the technologies and tools Eden Adlao uses to build modern web experiences.',
-  ogTitle: 'Tech Stack | Eden Adlao',
-  ogDescription: 'View the technologies and tools Eden Adlao uses to build modern web experiences.',
+  description: 'Explore my stack across front-end, back-end, databases, and developer tools and tools Eden Adlao uses: HTML, CSS, JavaScript, and Tailwind for the front-end, plus Java, Python, Node.js, databases, and developer tools.',
+  ogDescription: 'Explore my stack across front-end, back-end, databases, and developer tools and tools Eden Adlao uses: HTML, CSS, JavaScript, and Tailwind for the front-end, plus Java, Python, Node.js, databases, and developer tools.',
+  ogTitle: 'My Stack | Eden Adlao',
   ogType: 'website',
-  twitterCard: 'summary_large_image',
+  ogUrl: 'https://eden-adlao-portfolio.onrender.com/stack',
+  twitterCard: 'summary',
 })
 
 type StackCategory = {

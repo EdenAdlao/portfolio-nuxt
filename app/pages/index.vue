@@ -4,15 +4,13 @@
   })
 
   useSeoMeta({
-    description: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
-    ogTitle: 'Eden Adlao | Portfolio',
-    ogDescription: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
-    ogType: 'website',
-    ogUrl: 'https://eden-adlao-portfolio.onrender.com/',
-    ogImage: 'https://eden-adlao-portfolio.onrender.com/images/profile-pic.jpg',
-    ogImageAlt: 'Portrait of Eden Adlao',
-    twitterCard: 'summary_large_image',
-  })
+  description: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
+  ogDescription: 'Aspiring to become a front-end developer, passionate about creating clean, user-friendly, and visually engaging web experiences.',
+  ogTitle: 'Home | Eden Adlao',
+  ogType: 'website',
+  ogUrl: 'https://eden-adlao-portfolio.onrender.com/',
+  twitterCard: 'summary',
+})
 </script>
 
 <template>
